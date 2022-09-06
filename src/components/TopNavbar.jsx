@@ -14,3 +14,11 @@ import MenuItem from "@mui/material/MenuItem";
 import Cake from "@mui/icons-material/Cake";
 import "../styles/TopNavbar.css";
 import { Link } from "react-router-dom";
+
+const TopNavbar = () => {
+  return (
+    <div>TopNavbar</div>
+  )
+}
+
+export default TopNavbar
