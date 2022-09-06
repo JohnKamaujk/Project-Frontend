@@ -1,9 +1,9 @@
-import React from 'react'
-
-const DeleteDessert = () => {
+import DisplayDessertsDropdown from "./DisplayDessertsDropdown";
+const DeleteDessert = ({ desserts }) => {
   return (
-    <div>DeleteDessert</div>
-  )
-}
-
-export default DeleteDessert
+    <div>
+      <DisplayDessertsDropdown desserts={desserts} />
+    </div>
+  );
+};
+export default DeleteDessert;
