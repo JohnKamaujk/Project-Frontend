@@ -1,0 +1,15 @@
+.background {
+  background: #945753;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+.phrase-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+  color: var(--background);
+}
