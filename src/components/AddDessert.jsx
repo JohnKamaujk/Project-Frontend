@@ -1,9 +1,22 @@
-import React from 'react'
+import FormDesserts from "./FormDesserts";
+import "../styles/Home.css";
 
 const AddDessert = () => {
+  function fetchAdd(e, params) {
+    e.preventDefault();
+    fetch("https://desserts-db.herokuapp.com/desserts", {
+      method: "POST",
+      body: JSON.stringify(params),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((response) => window.alert("Dessert added"));
+  }
   return (
-    <div>AddDessert</div>
-  )
-}
-
-export default AddDessert
+    <div>
+      <h1>Add Dessert</h1>
+      <FormDesserts fetchRequest={fetchAdd} />;
+    </div>
+  );
+};
+export default AddDessert;
