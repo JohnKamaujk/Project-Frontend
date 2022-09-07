@@ -13,33 +13,17 @@ import { CssBaseline } from "@mui/material";
 import Container from "@mui/material/Container";
 import { useEffect } from "react";
 
-function App() {
-  const [adminLogged, setAdminLogged] = useState(false);
+const App = () => {
   const [desserts, setDesserts] = useState([]);
-  const [dessertsInCart, setDessertsInCart] = useState([]);
   useEffect(() => {
     fetch("https://desserts-db.herokuapp.com/desserts")
       .then((res) => res.json())
       .then((data) => setDesserts(data));
   }, [setDesserts]);
 
-  const handleDessertInCart = (dessert) => {
-    if (dessertsInCart.some((d) => d.id === dessert.id)) {
-      window.alert(`${dessert.name} is already in the cart`);
-    } else {
-      setDessertsInCart([...dessertsInCart, dessert]);
-      window.alert(`${dessert.name} has been added to the cart`);
-    }
-  };
-
-  function handleDeleteDessertInCart(dessertsToRemove) {
-    setDessertsInCart(
-      dessertsInCart.filter((dessert) => dessert.id !== dessertsToRemove.id)
-    );
-  }
   return (
     <div className="App background">
-      <TopNavbar adminLogged={adminLogged} setAdminLogged={setAdminLogged} />
+      <TopNavbar />
       <CssBaseline />
       <Container className="content">
         <Routes>
@@ -48,14 +32,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route
             path="/desserts"
-            element={
-              <Desserts
-                desserts={desserts}
-                handleDessertInCart={handleDessertInCart}
-                setDesserts={setDesserts}
-                setDessertsInCart={setDessertsInCart}
-              />
-            }
+            element={<Desserts desserts={desserts} setDesserts={setDesserts} />}
           />
           {/* <Route
             path="/login"
