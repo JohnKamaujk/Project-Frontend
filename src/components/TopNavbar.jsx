@@ -57,7 +57,7 @@ const TopNavbar = () => {
               textDecoration: "none",
             }}
           >
-            Mardaf
+            Dessert
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -121,7 +121,7 @@ const TopNavbar = () => {
               textDecoration: "none",
             }}
           >
-            Mardaf
+            Dessert
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pagesRoutes.map((page) => (
@@ -143,7 +143,7 @@ const TopNavbar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="D Sharp" src="/static/images/avatar/3.jpg" />
+                <Avatar src="/static/images/avatar/3.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
