@@ -4,11 +4,11 @@ const AboutUs = () => {
   return (
     <div>
       <div className="phrase-container">
-        <h1>Conocenos mas</h1>
-        <h2>100% mexican company</h2>
+        <h1>Dessert Palace</h1>
+        <h2>An Award Winning Café</h2>
         <p>
-          We were born and we have always lived in the greatest city, Mexico
-          City
+          We were born and we have always lived in the greatest city in
+          Africa,Nairobi City
         </p>
         <h2>Family owned</h2>
         <p>We're two siblings who decided to start their own business </p>

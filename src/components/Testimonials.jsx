@@ -9,10 +9,10 @@ const Testimonials = () => {
       <Carousel.Item>
         <img className="d-block w-100" src={cafebg} alt="First slide" />
         <Carousel.Caption className="background-fix">
-          <h3>Cafeteria Decor </h3>
+          <h3>Our Cafeteria Decor</h3>
           <p>
-            We started buying this desserts due to the great variety of regimes
-            they have.
+            We are located in an ambient,secure and spacious location.Our
+            restaurant decor is very exquisite & lounge worthy.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -21,15 +21,20 @@ const Testimonials = () => {
 
         <Carousel.Caption className="background-fix">
           <h3>Sweet Treats </h3>
-          <p>Best desserts ever</p>
+          <p>
+            We offer the most delicious delicacies & treats at a very affordable
+            price.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img className="d-block w-100" src={coffeebg} alt="Third slide" />
 
         <Carousel.Caption className="background-fix">
-          <h3>Cafeteria Balboa</h3>
-          <p>We sell this desserts like hot potato.</p>
+          <h3>Coffee café</h3>
+          <p>
+            We have the best cappuccino & hot latte in the whole of Nairobi City
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

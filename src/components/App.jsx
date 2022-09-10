@@ -16,7 +16,7 @@ import { useEffect } from "react";
 const App = () => {
   const [desserts, setDesserts] = useState([]);
   useEffect(() => {
-    fetch("https://desserts-db.herokuapp.com/desserts")
+    fetch("https://dessert1-app.herokuapp.com/desserts")
       .then((res) => res.json())
       .then((data) => setDesserts(data));
   }, [setDesserts]);
@@ -34,12 +34,6 @@ const App = () => {
             path="/desserts"
             element={<Desserts desserts={desserts} setDesserts={setDesserts} />}
           />
-          {/* <Route
-            path="/login"
-            element={
-              <Login setLoggedIn={setAdminLogged} adminLogged={adminLogged} />
-            }
-          /> */}
           <Route path="/addDessert" element={<AddDessert />} />
           <Route
             path="/deleteDessert"
@@ -49,15 +43,6 @@ const App = () => {
             path="/updateDessert"
             element={<UpdateDessert desserts={desserts} />}
           />
-          {/* <Route
-            path="/cart"
-            element={
-              <Cart
-                desserts={dessertsInCart}
-                handleDeleteDessertInCart={handleDeleteDessertInCart}
-              />
-            }
-          /> */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Container>
