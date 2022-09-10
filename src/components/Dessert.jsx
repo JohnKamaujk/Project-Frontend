@@ -8,7 +8,6 @@ import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import "../styles/Dessert.css";
 

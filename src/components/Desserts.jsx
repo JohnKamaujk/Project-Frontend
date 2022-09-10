@@ -7,7 +7,7 @@ import "../styles/Desserts.css";
 
 const Desserts = ({ desserts, setDesserts, handleDessertInCart }) => {
   useEffect(() => {
-    fetch("https://desserts-db.herokuapp.com/desserts")
+    fetch("https://dessert1-app.herokuapp.com/desserts")
       .then((res) => res.json())
       .then((data) => setDesserts(data));
   }, [setDesserts]);

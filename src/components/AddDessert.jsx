@@ -4,7 +4,7 @@ import "../styles/Home.css";
 const AddDessert = () => {
   function fetchAdd(e, params) {
     e.preventDefault();
-    fetch("https://desserts-db.herokuapp.com/desserts", {
+    fetch("https://dessert1-app.herokuapp.com/desserts", {
       method: "POST",
       body: JSON.stringify(params),
       headers: {
