@@ -10,7 +10,7 @@ This is an application that is used to display desserts which are available in t
 * After cloning use VS Code to open the folder.
 * Run the application in the code editor using any browser
 ## Live link
-https://johnkamaujk.github.io/Accuweather-app/
+https://dessert-app-nu.vercel.app/
 ## Known Bugs
 The app is running flawless with no bugs.
 ## Technologies Used
