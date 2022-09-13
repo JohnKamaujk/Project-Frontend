@@ -1,6 +1,7 @@
 # DESSERT PALACE APPLICATION
 #### This is a web application that is used to display desserts which are available in the menu of Desserts palace cafe.All the desserts which are in the db can be accessed by clicking the desserts link on the navbar.CRUD actions for adding ,deleting and updating a dessert can also be performed by tapping on the avatar icon on the navbar.This will display a drop down menu and you can select the action you want to perform.
 #### By **John Kamau(Software Developer)**
+![screenshot](./src/img/screenshot.png)
 ## Description
 This is an application that is used to display desserts which are available in the menu of Desserts palace cafe.As an admin you can add a dessert,delete and update an existing dessert from the database using the back end server which is hosted on Heroku.
 ## Setup/Installation Requirements
