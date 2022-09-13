@@ -15,7 +15,7 @@ const AboutUs = () => {
         <h2>Mission</h2>
         <p>
           Our main objective is to provide every dessert for every possible food
-          regime, so no one has to crave anyon else's dessert due to being on a
+          regime, so no one has to crave anyone else's dessert due to them being on a
           diet or a strict food regime.
         </p>
       </div>
